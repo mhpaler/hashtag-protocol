@@ -1,7 +1,7 @@
 # Key Participants
 
-Stitched into Hashtag Protocol are incentive mechanisms that harnesses the
-self-interest of at least six key market participants to drive positive network
+Stitched into Hashtag Protocol are incentive mechanisms that will harnesses the
+self-interest of seven key market participants to drive positive network
 growth.
 
 <!-- markdownlint-disable MD013 MD033-->
