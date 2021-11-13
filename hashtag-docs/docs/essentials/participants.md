@@ -177,6 +177,35 @@ Publishers, Auctioneers must be whitelisted by Protocol to host auctions.
 </table>
 <!-- markdownlint-enable -->
 
+## Sponsor (phase 4)
+
+User or orgnanisation that sponsors a tag. 
+
+<!-- markdownlint-disable MD013 MD033-->
+<table>
+  <thead>
+    <tr>
+      <th>Use cases</th>
+      <th>Financial incentives</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="50%">
+        <ul>
+          <li>Generate engagement with product, service or cause.</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>TBD Phase 4</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
 ## Curator (phase 4)
 
 User that engages in tagging data quality curation.
@@ -194,6 +223,7 @@ User that engages in tagging data quality curation.
       <td width="50%">
         <ul>
           <li>Generate revenue from auditing tagging data quality.</li>
+          <li>Generate revenue share from approving sponsored tags.</li>
         </ul>
       </td>
       <td>
