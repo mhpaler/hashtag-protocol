@@ -6,7 +6,7 @@ growth.
 
 <!-- markdownlint-disable MD013 MD033-->
 <br /><br />
-<p align="center"><img src="/assets/img/participants.png" alt="drawing"
+<p align="center"><img src="https://hashtag-protocol.s3.amazonaws.com/participants-v2.png" alt="drawing"
 width="500"/></p>
 <br /><br />
 <!-- markdownlint-enable -->
