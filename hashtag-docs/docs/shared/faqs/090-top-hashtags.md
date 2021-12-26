@@ -1,16 +1,15 @@
-## Newest Hashtags
+## Top Hashtags
 
 V1 - [GraphQL API](https://api.thegraph.com/subgraphs/name/hashtag-protocol/hashtag-polygon-mumbai/)
 
 ```
 query {
-    hashtags(first: 1000, orderBy: timestamp, orderDirection: desc) {
+    hashtags(first: 10, orderBy: tagCount, orderDirection: desc) {
         id
         name
         displayHashtag
         owner
         publisher
-        timestamp
         tagCount
     }
 }

@@ -1,3 +1,20 @@
+## Top Publishers
+
+V1 - [GraphQL API](https://api.thegraph.com/subgraphs/name/hashtag-protocol/hashtag-polygon-mumbai/)
+
+```
+query {
+    publishers(first: 10, orderBy: tagCount, orderDirection: desc) {
+        id
+        mintCount
+        tagCount
+        tagFees
+    }
+}
+```
+
+
+
 ## What is a "Publisher"?
 
 A **_Publisher_**, represented in the system by their Ethereum wallet address,
