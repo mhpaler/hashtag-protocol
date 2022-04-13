@@ -1,7 +1,5 @@
 # Welcome to Hashtag Protocol
 
-We're glad you're here!
-
 This site provides documentation for Hashtag Protocol, an experimental content tagging
 protocol for the decentralized internet. Here you’ll find both high-level and
 technical information for developers, end-users and anyone else trying to
