@@ -121,7 +121,7 @@ export default {
       };
       if (this.active) {
         axios
-          .get("https://api.nftport.xyz/nfts/" + this.tag.nftContract + "/" + this.tag.nftId, {
+          .get("https://api.nftport.xyz/v0/nfts/" + this.tag.nftContract + "/" + this.tag.nftId, {
             params: {
               chain: onBoardChainMap[this.tag.nftChainId].machineName,
               page_number: 1,

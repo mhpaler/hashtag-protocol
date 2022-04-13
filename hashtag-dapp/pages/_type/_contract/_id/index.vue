@@ -289,7 +289,7 @@ export default {
         Authorization: this.$config.nftPortAPIKey,
       };
       axios
-        .get("https://api.nftport.xyz/nfts/" + nftData.nftContract + "/" + nftData.nftId, {
+        .get("https://api.nftport.xyz/v0/nfts/" + nftData.nftContract + "/" + nftData.nftId, {
           params: {
             chain: chain,
             page_number: 1,
