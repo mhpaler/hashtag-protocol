@@ -143,7 +143,7 @@ export default {
     //       chain = "polygon";
     //     }
     //     promises.push(
-    //       axios.get("https://api.nftport.xyz/nfts/" + nft.nftContract + "/" + nft.nftId, {
+    //       axios.get("https://api.nftport.xyz/v0/nfts/" + nft.nftContract + "/" + nft.nftId, {
     //         params: {
     //           chain: chain,
     //           page_number: 1,
