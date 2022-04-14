@@ -95,34 +95,37 @@ export default {
           chain = "polygon";
         }
         promises.push(
-          axios.get("https://api.nftport.xyz/v0/nfts/" + nft.nftContract + "/" + nft.nftId, {
-            params: {
-              chain: chain,
-              page_number: 1,
-              page_size: 50,
-            },
-            data: {
-              tagInfo: nft,
-            },
-            headers: headers,
-          }),
+          axios
+            .get("https://api.nftport.xyz/v0/nfts/" + nft.nftContract + "/" + nft.nftId, {
+              params: {
+                chain: chain,
+                page_number: 1,
+                page_size: 50,
+              },
+              data: {
+                tagInfo: nft,
+              },
+              headers: headers,
+            })
+            .catch(() => null),
         );
       });
-      await axios.all(promises).then((response) => {
+
+      Promise.all(promises).then((response) => {
         let nftData = [];
         response.forEach((nft) => {
-          if (nft.data.response == "OK") {
+          if (nft && nft.data.response == "OK") {
             const config = JSON.parse(nft.config.data);
             nft.data.nft.nftId = nft.data.nft.token_id;
             nft.data.nft.nftName = nft.data.nft.metadata.name;
             nft.data.nft.hashtagDisplayHashtag = config.tagInfo.hashtagDisplayHashtag;
             nft.data.nft.nftContract = nft.data.nft.contract_address;
             nft.data.nft.nftChain = nft.config.params.chain;
-            let res = nft.data.nft.cached_image_url.split("//");
+            let res = nft.data.nft.cached_file_url.split("//");
             if (res[0] == "ipfs:") {
               nft.data.nft.image_url = "https://ipfs.io/" + res[1];
             }
-            nft.data.nft.nftImage = nft.data.nft.cached_image_url;
+            nft.data.nft.nftImage = nft.data.nft.cached_file_url;
             nftData.push(nft.data.nft);
           }
         });
