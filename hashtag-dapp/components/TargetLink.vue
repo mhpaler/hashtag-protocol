@@ -140,11 +140,11 @@ export default {
               // nft.data.nft.tagger = config.tagInfo.tagger;
               // nft.data.nft.nftContract = nft.data.nft.contract_address;
               // nft.data.nft.nftChain = nft.config.params.chain;
-              //let res = response.data.nft.cached_image_url.split("//");
+              //let res = response.data.nft.cached_file_url.split("//");
               //if (res[0] == "ipfs:") {
               //  this.tag.image_url = "https://ipfs.io/" + res[1];
               //}
-              this.tag.metadataImageURI = response.data.nft.cached_image_url;
+              this.tag.metadataImageURI = response.data.nft.cached_file_url;
               this.tag.video = false;
               if (this.tag.metadataImageURI.includes("mp4")) {
                 this.tag.video = true;

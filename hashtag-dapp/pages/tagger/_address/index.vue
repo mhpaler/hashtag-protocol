@@ -306,11 +306,11 @@ export default {
             nft.data.nft.nftContract = nft.data.nft.contract_address;
             nft.data.nft.nftChain = nft.config.params.chain;
             nft.data.nft.tagger = config.tagInfo.tagger;
-            let res = nft.data.nft.cached_image_url.split("//");
+            let res = nft.data.nft.cached_file_url.split("//");
             if (res[0] == "ipfs:") {
-              nft.data.nft.cached_image_url = "https://ipfs.io/" + res[1];
+              nft.data.nft.cached_file_url = "https://ipfs.io/" + res[1];
             }
-            nft.data.nft.nftImage = nft.data.nft.cached_image_url;
+            nft.data.nft.nftImage = nft.data.nft.cached_file_url;
             nft.data.nft.id = count;
             count++;
             nftData.push(nft.data.nft);
