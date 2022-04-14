@@ -300,11 +300,11 @@ export default {
         .then((response) => {
           let nftHold = {};
           nftHold["nftName"] = response.data.nft.metadata.name;
-          let res = response.data.nft.cached_image_url.split("//");
+          let res = response.data.nft.cached_file_url.split("//");
           if (res[0] == "ipfs:") {
             nftHold["nftImage"] = "https://ipfs.io/" + res[1];
           } else {
-            nftHold["nftImage"] = response.data.nft.cached_image_url;
+            nftHold["nftImage"] = response.data.nft.cached_file_url;
           }
           nftHold["nftId"] = response.data.nft.token_id;
           nftHold["nftDescription"] = response.data.nft.metadata.description;

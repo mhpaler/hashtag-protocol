@@ -83,9 +83,9 @@ export default {
         Authorization: this.$config.nftPortAPIKey,
       };
       axios
-        .get("https://api.nftport.xyz/text_search", {
+        .get("https://api.nftport.xyz/v0/search", {
           params: {
-            chain: "all-chains",
+            chain: "all",
             text: name,
             page_number: 1,
             page_size: 50,
@@ -102,7 +102,7 @@ export default {
               arrInfo["contractName"] = jsonArr[i].name;
               arrInfo["contractSymbol"] = "test";
               arrInfo["id"] = jsonArr[i].token_id;
-              arrInfo["metadataImageURI"] = jsonArr[i].image_url;
+              arrInfo["metadataImageURI"] = jsonArr[i].cached_file_url;
               arrInfo["metadataName"] = jsonArr[i].name;
               arrInfo["tokenId"] = jsonArr[i].token_id;
               if (jsonArr[i].chain === "ethereum") {
