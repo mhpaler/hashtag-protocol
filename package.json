@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "start": "lerna run start --parallel",
-    "build": "lerna run build --parallel"
+    "start": "lerna run start",
+    "build": "lerna run build"
   },
   "license": "UNLICENSED",
   "devDependencies": {
